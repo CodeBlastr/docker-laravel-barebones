@@ -1,0 +1,8 @@
+version: '3'
+services:
+  composer:
+    image: composer:latest
+    working_dir: /var/www/html
+    command: ["composer", "install"]
+    volumes:
+      - ./:/var/www/html
